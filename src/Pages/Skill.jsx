@@ -76,18 +76,18 @@ margin: auto;
 
 
 @media (max-width: 580px){
-    display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: auto;
+    justify-items: center;
     }
+
+
 img{
     width: 100px;
     /* margin-left: 100px; */
-    img:hover{
-        
 
-}
     @media (max-width: 580px){
         margin:auto ;
     }
