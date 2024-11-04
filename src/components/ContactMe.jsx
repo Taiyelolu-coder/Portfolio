@@ -7,7 +7,7 @@ const ContactMe =()=>{
         <Container>
             <Wrapper>
             <Logo>
-                <h1>Taiyelolu-coder</h1>
+                <h1>Code Sisi</h1>
             </Logo>
             <ContactBox>
                 <EmailPhone>

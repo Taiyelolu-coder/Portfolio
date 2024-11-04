@@ -16,7 +16,7 @@ const Header = () =>{
         <>
           <Container>
             <LogoNav>
-                <h1>Taiyelolu-coder</h1>
+                <h1>Code Sisi</h1>
             </LogoNav>
             <Navigations>
                 <Link to="/">
