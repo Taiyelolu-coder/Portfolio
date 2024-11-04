@@ -53,6 +53,9 @@ height: calc(100vh - 70px);
 h1{
     font-size: 45px;
     color: #830b47;
+    @media (max-width: 580px){
+        font-size:40px;
+    }
 }
 p{
     font-size: 18px;
@@ -64,8 +67,15 @@ flex-direction: column;
 /* justify-content: start; */
 align-items: center;
 text-align: start;
+@media (max-width: 580px){
+    margin: auto;
+}
 p{
     width: 1100px;
+    @media (max-width: 580px){
+        width: auto;
+        /* font-size: 15px; */
+    }
 }
 `
 const Training = styled.div`
@@ -73,8 +83,15 @@ display: flex;
 flex-direction: column;
 /* align-items: center; */
 text-align: start;
+@media (max-width: 580px){
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
 span{
     margin-right: 10px;
+    @media (max-width: 580px){
+        margin: auto;
+    }
 }
 `
 const Education = styled.div`
@@ -82,10 +99,16 @@ display: flex;
 flex-direction: column;
 /* align-items: center; */
 text-align: start;
+@media (max-width: 580px){
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
 span{
     margin-right: 10px;
-}
-`
+    @media (max-width: 580px){
+        margin: auto;
+    }
+}`
 
 const Course = styled.div`
 display: flex;

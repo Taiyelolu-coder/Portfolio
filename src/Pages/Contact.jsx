@@ -20,7 +20,7 @@ const Contact =()=>{
                     </Phone>
                     <Email>
                         <img src={Mail} alt="" />
-                        <a href="https://alayandeebudola@gmail.com">Taiwo Alayande</a>
+                        <a href="Mailto:alayandeebudola@gmail.com">Taiwo Alayande</a>
                     </Email>
                     <Github>
                         <img src={GithubImage} alt="" />
@@ -64,11 +64,20 @@ flex-direction:column ;
 padding: 20px;
 gap: 20px;
 
+@media (max-width: 580px){
+    margin: auto;
+
+}
+
 `
 const Contacts = styled.div`
 display: flex;
 gap: 50px;
 justify-content: space-between;
+@media (max-width: 580px){
+    flex-wrap: wrap;
+    margin: auto;
+}
 img{
     width: 50px;
 }`
@@ -95,7 +104,10 @@ flex-direction: column;
 align-items: center;
 h1{
     font-size: 45px;
-    color: #830b47;;
+    color: #830b47;
+    @media (max-width: 580px){
+        font-size: 30px;
+    }
 }
 `
 const Phone = styled.div`

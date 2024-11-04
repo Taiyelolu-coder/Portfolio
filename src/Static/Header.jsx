@@ -1,8 +1,19 @@
+import {useState} from "react"
 import styled from "styled-components"
 import {Link} from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi";
+import SideBar from "./Sidebar";
 const Header = () =>{
+
+    
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () => {
+      setToggle(!toggle)
+  }
+
     return(
+        <>
           <Container>
             <LogoNav>
                 <h1>Taiyelolu-coder</h1>
@@ -33,12 +44,17 @@ const Header = () =>{
                         <span>Contact Me</span>
                     </nav>
                 </Link>
-                <SideNav >
+
+            </Navigations>
+            <SideNav onClick={handleToggle}>
                 <GiHamburgerMenu />
                 </SideNav>
-            </Navigations>
           </Container>
+              {toggle === false ? null : <SideBar toggle =
+              {toggle} setToggle={setToggle}/>}
+        </> 
     )
+
 }
 
 export default Header
@@ -65,7 +81,13 @@ const LogoNav = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
+  h1{
+    color:linear-gradient(to bottom, rgba(255, 165, 0, 0.4), rgba(33, 85, 27, 0.6), rgba(230, 78, 0, 0.4)) ;
+    @media (max-width: 580px){
+        font-size: 20px;
 
+    }
+  }
 `
 
 const Navigations = styled.div`
@@ -74,9 +96,11 @@ flex-direction: row;
 gap: 25px;
 
 
-
 span{
     font-weight: 500;
+}
+span:hover{
+   
     color: #830b47;
 
 }
@@ -86,13 +110,14 @@ span{
 
 `
 const SideNav = styled.div`
-display: none;
-/* font-size: 50px; */
+display:none;
+font-size:30px;
+/* margin-left: -30px;. */
 
 @media (max-width: 580px){
-    display: block;
-    /* align-items: center; */
-    cursor: pointer;
+  display:flex;
+  align-items: center;
+  cursor:pointer;
 }
 `
 // const  = styled.div``
