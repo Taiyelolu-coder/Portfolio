@@ -78,7 +78,7 @@ margin: auto;
 @media (max-width: 580px){
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 15px;
     margin: auto;
     justify-items: center;
     }
