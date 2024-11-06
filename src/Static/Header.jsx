@@ -82,9 +82,11 @@ const LogoNav = styled.div`
     align-items: center;
     gap: 10px;
   h1{
-    color:linear-gradient(to bottom, rgba(255, 165, 0, 0.4), rgba(33, 85, 27, 0.6), rgba(230, 78, 0, 0.4)) ;
+    background: linear-gradient(to right, #f32170, #6468a1,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     @media (max-width: 580px){
-        font-size: 20px;
+        font-size: 28px;
 
     }
   }

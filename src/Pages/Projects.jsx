@@ -56,19 +56,23 @@ const Projects = () =>{
 export default Projects
 
 const Container = styled.div`
-
+max-width: 1280px;
 `
 const Wrapper = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+width: 95%;
+/* border: 1px solid green; */
 align-items: center;
-width: 85%;
-max-width: 1280px;
 margin: auto;
+margin-left: 200px;
+margin-top: 40px;
+padding: 20px;
 gap: 30px;
 @media (max-width: 580px){
     flex-wrap: wrap;
+    margin: auto;
+    padding: 50px;
 }
 
 `
@@ -76,7 +80,7 @@ const Cards = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 350px;
+/* width: 350px; */
 height: 550px;
 margin-top: 50px;
 /* line-height: 1ch; */
@@ -84,7 +88,8 @@ gap:10px;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 10px;
 /* border: 1px solid blue; */
-padding: 5px;
+padding-left: 20px;
+padding-right: 20px;
 
 
 h3{
@@ -98,7 +103,8 @@ p{
     font-weight: 600;
 }
 img{
-    width: 280px;
+    width: 250px;
+    margin-top: 20px;
 }
 `
 const Links = styled.div`

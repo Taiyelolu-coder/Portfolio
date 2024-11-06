@@ -37,10 +37,13 @@ height: 450px;
 
 /* border: 1px solid grey; */
 margin: auto;
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2pxz 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 border-radius: 10px;
 
-
+@media (max-width: 580px){
+ 
+    
+}
 h3{
     font-size: 20px;
     color: #493d9b;

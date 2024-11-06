@@ -9,9 +9,11 @@ const Hero = () =>{
                 <TextBox>
                     <h1>Hello,
                         <br />
-                       <span>My name is <br /> Taiwo Alayande.</span> 
-                        <br />
-                        <span id="software">I'm a software developer.</span>
+                       My name is <br /> <span>Taiwo Alayande.</span> 
+                    </h1>
+
+                    <h1 id="software">
+                        I'm a software developer.
                     </h1>
                 </TextBox>
                 <ImageBox>
@@ -71,9 +73,12 @@ h1{
         text-align: center;
        }
     }
-span{
-    color: darkmagenta;
+span {
+    
     font-size: 45px;
+    background: linear-gradient(to right, #833754, #1f2a58,#610761, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     @media (max-width: 580px){
         font-size: 35px;
 }

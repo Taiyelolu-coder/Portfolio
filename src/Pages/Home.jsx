@@ -33,6 +33,7 @@ const Home = () =>{
 
 export default Home
 const Container = styled.div`
+
 /* position: absolute; */
 `
 
@@ -45,10 +46,14 @@ width: 85%;
 max-width: 1280px; 
 /* border: 1px solid green; */
 margin: auto;
-
+margin-bottom: 50px;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 height: calc(100vh - 70px);
 padding: 0px 30px;
+@media (max-width: 580px){
+    flex-wrap: wrap;
+    height: auto;
+}
 h1{
     font-size: 40px;
     color: #830b47;
@@ -57,21 +62,27 @@ h1{
 span{
     font-size: 20px;
     width: 180px;
+
 }
 `
 
 const ProjectCards = styled.div`
-display: flex;
+/* display: flex;
 align-items: center;
 justify-content: space-between;
-gap: 10px;
+gap: 10px; */
 /* border: 1px solid blue; */
 margin: auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+width: 95%;
+gap: 30px;
 
 border-radius: 10px;
 
 @media (max-width: 580px){
     flex-wrap: wrap;
+    height: auto;
 }
 
 img{

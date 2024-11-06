@@ -35,8 +35,8 @@ justify-content: space-between;
 align-items: center;
 margin: auto;
 /* border: 1px solid black; */
-/* margin-bottom: 50px; */
-
+margin-top: 50px;
+margin-bottom: 50px;
 `
 
 const Wrapper = styled.div`
@@ -46,8 +46,9 @@ const Wrapper = styled.div`
     width: 96%;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 20px;
     /* max-height: 80px; */
-    border-bottom: 1px solid lightslategrey;
+    /* border-bottom: 1px solid lightslategrey; */
     @media (max-width: 580px){
        flex-wrap: wrap;
        align-items: center;
@@ -55,12 +56,15 @@ const Wrapper = styled.div`
 `
 const Logo = styled.div`
 h1{
-@media (max-width: 580px){
+    background: linear-gradient(to right, #f32170, #6468a1,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text};
+/* @media (max-width: 580px){
     display: flex;
     text-align: center;
     font-size: 20px;
-}
-}`
+} */
+`
 const ContactBox = styled.div`
 display: flex;
 justify-content: space-between;

@@ -11,7 +11,7 @@ const Contact =()=>{
                 <TextBox>
                     <h1>You've got some questions?</h1>
                    
-                    <h1>Connect with me on:</h1>
+                    <h1>Kindly connect with me on:</h1>
                 </TextBox>
                 <Contacts>
                     <Phone>
